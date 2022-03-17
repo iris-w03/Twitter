@@ -2,7 +2,7 @@
 //  HomeTableViewController.swift
 //  Twitter
 //
-//  Created by 小元宵 on 3/6/22.
+//  Created by Iris Wang on 3/6/22.
 //  Copyright © 2022 Dan. All rights reserved.
 //
 
@@ -21,14 +21,15 @@ class HomeTableViewController: UITableViewController {
         
         myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.loadTweets()
     }
-    
-    
+
     
     @objc func loadTweets(){
         
@@ -93,9 +94,6 @@ class HomeTableViewController: UITableViewController {
     }
         
     
-    
-    
-    
 
     @IBAction func onLogout(_ sender: Any) {
         TwitterAPICaller.client?.logout()
@@ -120,9 +118,9 @@ class HomeTableViewController: UITableViewController {
            cell.profileimageView.image = UIImage(data: imageData)
        }
         
-        //cell.setFavorite(isFavorited: tweetArray[indexPath.row]["favorited"] as! Bool)
-        //cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
-        //cell.setRetweeted(isRetweeted: tweetArray[indexPath.row]["retweeted"] as! Bool)
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        cell.setRetweeted(tweetArray[indexPath.row]["retweeted"] as! Bool)
         
         
         

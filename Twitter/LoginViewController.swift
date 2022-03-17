@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Twitter
 //
-//  Created by 小元宵 on 3/6/22.
+//  Created by Iris Wang on 3/6/22.
 //  Copyright © 2022 Dan. All rights reserved.
 //
 
