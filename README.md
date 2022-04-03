@@ -24,7 +24,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/iris-w03/Twitter/blob/main/Images/TwitterV1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/iris-w03/Twitter/blob/main/Images/TwitterV1.gif' title='Video Walkthrough' height = 600px width='' alt='Video Walkthrough' />
 
 # Twitter - Part II
 
@@ -50,4 +50,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/iris-w03/Twitter/blob/main/Images/TwitterV2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/iris-w03/Twitter/blob/main/Images/TwitterV2.gif' title='Video Walkthrough' height = 600px width='' alt='Video Walkthrough' />
